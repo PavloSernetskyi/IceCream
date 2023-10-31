@@ -4,25 +4,41 @@ window.onload = function () {
     const btn = document.getElementById("calculate");
     //run specific functions when i click button.
     btn.onclick = TotalCost;
+
+
+
+    const box1 = document.getElementById("cone");
+    box1.onclick = TotalCost();
+
 };
+
+function hideOrShow() {
+    //input for radio buttons.
+    
+    //output field with info that need to be hidden or shown.
+    let hide = document.getElementById('hidden');
+    //checkbox.
+    let coneBtn = document.getElementById('cone');
+
+    let cupBtn = document.getElementById('cup');
+
+    //put some logic.
+
+    if (cupBtn.checked) {
+        hide.style.display = "none";
+    }
+    else {
+        hide.style.display = "block";
+    }
+}
+
 
 function TotalCost() {
     //get input from user.
     let oneScoop = 2.25;
     let numberOfScoops = document.getElementById('num-scoops').value;
 
-    //input for radio buttons.
-    let coneBtn = document.getElementById('cone').checked;
-    let cupBtn = document.getElementById('cup').checked;
-
-    //put some logic.
     let costOfOrder = 0;
-    if (cupBtn.checked) {
-        cupBtn.style.display = "block";
-    }
-    else {
-        cupBtn.style.display = "none";
-    }
 
 
 
