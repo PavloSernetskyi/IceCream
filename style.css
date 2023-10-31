@@ -1,0 +1,23 @@
+
+
+.container {
+    border: 2px black solid;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+
+.container-1 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.container-2 {
+    text-align: center;
+    margin-top: 50px;
+    border: 2px black solid;
+}
+.container-3 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
